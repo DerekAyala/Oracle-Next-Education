@@ -4,10 +4,15 @@
 
 <script>
 	var anho = 2022
-	document.write("Juan tiene: " + (anho - 2000)+" años");
+	var juanEdad = (anho - 2000)
+	var pedroEdad = (anho - 1995)
+	var carlosEdad = (anho - 2005)
+	document.write("Juan tiene: " + juanEdad +" años");
 	document.write("<br>");
-	document.write("Pedro  tiene: " + (anho - 1995)+" años");
+	document.write("Pedro  tiene: " + pedroEdad +" años");
 	document.write("<br>");
-	document.write("Carlos  tiene: " + (anho - 2005)+" años");
+	document.write("Carlos  tiene: " + carlosEdad +" años");
 	document.write("<br>");
+	var promedio = (juanEdad + pedroEdad + carlosEdad)/3
+	document.write("El Promedio de las edades: " + Math.round(promedio))
 </script>
