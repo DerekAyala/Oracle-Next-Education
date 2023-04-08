@@ -3,20 +3,19 @@
 <h1>PROGRAMA</h1>
 
 <script>
-	function saltarLinea() {
-		var saltoLinea = "<br><br>"
+	function saltarLinea(saltoLinea) {
 		document.write(saltoLinea)
 	}
-
+	var saltoLinea = "<br><br><br>"
 	var anho = 2025;
 
 	document.write("Juan tiene: " + (anho-2000) + " años");
-	saltarLinea()
+	saltarLinea(saltoLinea)
 	document.write("Pedro tiene: " + (anho-1995) + " años");
 
 	anho = 2030
 
-	saltarLinea()
+	saltarLinea(saltoLinea)
 	document.write("Carlos tiene: " + (anho-2005) + " años");
 
 </script>
