@@ -17,11 +17,14 @@
 	}
 
   function calcularIMC(peso,altura, nombre) {
-    imprimir("Peso: " + peso);
-    imprimir("Altura: " + altura);
-    imprimir("IMC de  "+ nombre + ": " + peso / Math.pow(altura,2));
+    imprimir("Peso "+ nombre+": " + peso);
+    imprimir("Altura " + nombre+": " + altura);
+
+    return peso / Math.pow(altura,2)
   }
 
-  calcularIMC(70,1.73,"Derek");
+  var derek = calcularIMC(70,1.73,"Derek");
+  var america =  calcularIMC(56,1.60,"America");
+  imprimir("El promedio del IMC es: "+ (derek + america)/2);
 
 </script>
