@@ -22,9 +22,9 @@
 
     return peso / Math.pow(altura,2)
   }
+  var peso = prompt("Ingresa tu peso: ")
+  var altura = prompt("Ingresa tu altura: ")
+  var nombre = prompt("Ingresa tu nombre: ")
 
-  var derek = calcularIMC(70,1.73,"Derek");
-  var america =  calcularIMC(56,1.60,"America");
-  imprimir("El promedio del IMC es: "+ (derek + america)/2);
-
+  imprimir(calcularIMC(peso,altura,nombre))
 </script>
