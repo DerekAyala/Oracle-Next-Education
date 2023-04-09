@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<h1>Calculo de diferencia de edades</h1>
+
+<script>
+	function saltarLinea(saltoLinea) {
+		document.write(saltoLinea)
+	}
+
+  function imprimir(diferencia){
+    document.write("Nuestra diferencia de edad es ", diferencia);
+  }
+
+  var saltoLinea = "<br><br>"
+  var edad1 = 22
+  var edad2 = 50
+
+  document.write("Mi edad: ", edad1);
+  saltarLinea(saltoLinea);
+  document.write("Edad de mi compañer@: ", edad2);
+  saltarLinea(saltoLinea);
+  imprimir(Math.abs(edad1-edad2));
+
+</script>
