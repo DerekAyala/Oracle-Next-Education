@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<h1>Calculando IMC</h1>
+
+<script>
+
+	function saltarLinea() {
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function imprimir(frase) {
+		document.write(frase);
+		saltarLinea();
+	}
+
+  var numeroPensado = Math.round(math.round()*10);
+  var numeroLanzado = parseInt(prompt("Adivina el numero"));
+
+  if (numeroLanzado == numeroPensado) {
+		imprimir("Numero acertado")
+	} else {
+		imprimir("Numero equivocado, el numero correcto era ", numeroPensado);
+	}
+</script>
