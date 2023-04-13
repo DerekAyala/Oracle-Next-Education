@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<h1>Promedio de edades </h1>
+
+<script>
+
+	function saltarLinea() {
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+
+	}
+
+  var suma = 0;
+  var miembros = parseInt(prompt("Ingrese la cantidad de miembros"));
+
+  for(var i = 1; i <= miembros; i++){
+    var edad = parseInt(prompt("Ingrese la edad del miembro " + i));
+    suma += edad
+  }
+
+  imprimir("La edad promedio de la familia de "+ miembros+" integrantes es "+ (suma/miembros))
+  
+
+</script>
