@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+<input type="text">
+<button>Verificar si acerto con el secreto</button>
+
+<script>
+  var secreto = [3,4,5,6]
+  var button = document.querySelector("button");
+  var input = document.querySelector("input");
+  input.focus();
+  function verificar(){
+    if ( secreto.includes(parseInt(input.value))) {
+      alert("usted acerto")
+    } else {
+      alert("Usted erro")
+    }
+    input.value = "";
+    input.focus();
+  }
+  button.onclick= verificar;
+</script>
