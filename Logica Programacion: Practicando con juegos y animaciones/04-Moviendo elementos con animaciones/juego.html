@@ -25,8 +25,34 @@
     return Math.round(Math.random()*limite);
   }
 
-  xAleatorio = aleatorio(600);
-  yAleatorio = aleatorio(400);
+  function limpiarPantalla(){
+    pincel.clearRect(0,0,600,400)
+    pincel.fillStyle = "lightgrey";
+    pincel.fillRect(0,0,600,400);
+  }
 
-  objetivo(xAleatorio,yAleatorio);
+  var xAleatorio;
+  var yAleatorio;
+
+  function actualizarPantalla() {
+    limpiarPantalla();
+    xAleatorio = aleatorio(600);
+    yAleatorio = aleatorio(400);
+    objetivo(xAleatorio,yAleatorio);
+  }
+
+  setInterval(actualizarPantalla,1000);
+
+  function disparar(evento) {
+    var x = evento.pageX - pantalla.offsetLeft;
+    var y = evento.pageY - pantalla.offsetTop;
+    if ((x < xAleatorio + radio) &&
+        (y < yAleatorio + radio) &&
+        (x > xAleatorio - radio) &&
+        (y > yAleatorio - radio)) {
+      alert("Tiro certero");
+    }
+  }
+
+  pantalla.onclick = disparar;
 </script>
