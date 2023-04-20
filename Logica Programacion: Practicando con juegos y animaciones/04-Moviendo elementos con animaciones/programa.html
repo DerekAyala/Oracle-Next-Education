@@ -14,6 +14,17 @@
     pincel.fill();
   }
 
-  circunferencia(20,20,10);
+  function limpiarPantalla(){
+    pincel.clearRect(0,0,600,400)
+  }
+
+  var x = 0;
+  function actualizarPantalla() {
+    limpiarPantalla();
+    circunferencia(x,20,10);
+    x++;
+  }
+
+  setInterval(actualizarPantalla,50);
 
 </script>
