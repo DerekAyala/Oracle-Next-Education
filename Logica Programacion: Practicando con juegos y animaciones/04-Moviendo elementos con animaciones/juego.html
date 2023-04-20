@@ -1,0 +1,32 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+	var pantalla = document.querySelector("canvas");
+	var pincel = pantalla.getContext("2d");
+  var radio = 10
+
+  pincel.fillStyle = "lightgrey";   //propiedad
+	pincel.fillRect(0,0,600,400); //función
+
+  function circunferencia(x,y,radio,color) {
+    pincel.fillStyle = color;
+    pincel.beginPath();
+    pincel.arc(x,y,radio,0,2*Math.PI);
+    pincel.fill();
+  }
+
+  function objetivo(x,y) {
+    circunferencia(x,y,radio + 20,"red");
+    circunferencia(x,y,radio + 10,"white");
+    circunferencia(x,y,radio,"red");
+  }
+
+  function aleatorio(limite) {
+    return Math.round(Math.random()*limite);
+  }
+
+  xAleatorio = aleatorio(600);
+  yAleatorio = aleatorio(400);
+
+  objetivo(xAleatorio,yAleatorio);
+</script>
