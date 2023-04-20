@@ -8,9 +8,22 @@
 	pincel.fillRect(0,0,600,400); //función
 
 
-  function exibirAlerta(){
-    alert("Usted dio click en la pantalla");
+  function exibirAlerta(evento){
+    var x = evento.pageX - pantalla.offsetLeft;
+    var y = evento.pageY - pantalla.offsetTop;
+    alert(x + " " + y);
   }
 
-  pantalla.onclick = exibirAlerta;
+  function dibujarCirculo(evento){
+    var x = evento.pageX - pantalla.offsetLeft;
+    var y = evento.pageY - pantalla.offsetTop;
+
+
+    pincel.fillStyle = "blue";
+    pincel.beginPath();
+    pincel.arc(x,y,10,0,2*3.14);
+    pincel.fill();
+  }
+
+  pantalla.onclick = dibujarCirculo;
 </script>
