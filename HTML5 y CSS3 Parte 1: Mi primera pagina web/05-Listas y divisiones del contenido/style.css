@@ -1,26 +1,41 @@
-.principal {
+.principal{
   background-color: #cccccc;
+  padding: 20px;
 }
 
-h1, h2 {
+h1, h2{
   text-align: center;
 }
 img {
   width: 100%;
 }
 
-p {
+p{
   text-align: center;
 }
 
-em strong {
+em strong{
   color: red;
 }
 
-.mision {
+.mision{
   font-size: 20px;
 }
 
-.item {
+.diferenciales{
+  padding: 20px;
+}
+ul{
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin-right: 15%;
+}
+
+.item{
   font-style: italic;
+}
+
+.imagenDiferenciales{
+  width: 50%;
 }
