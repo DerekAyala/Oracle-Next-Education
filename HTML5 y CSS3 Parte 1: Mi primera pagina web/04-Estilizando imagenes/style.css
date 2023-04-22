@@ -2,14 +2,18 @@ body {
   background-color: #cccccc;
 }
 
-p {
+h1 {
   text-align: center;
 }
 
-h1 {
+p {
   text-align: center;
 }
 
 em strong {
   color: red;
+}
+
+.mision {
+  font-size: 20px;
 }
