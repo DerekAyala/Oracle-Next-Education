@@ -1,5 +1,6 @@
 header {
   background-color: #bbbbbb;
+  padding: 20px 0;
 }
 
 nav li {
@@ -13,4 +14,12 @@ nav a {
   font-weight: bold;
   font-size: 22px;
   text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
 }
