@@ -10,7 +10,7 @@
   <body>
     <header>
       <div class="caja">
-        <h1><img src="../proyecto/imagenes/logo.png"></h1>
+        <h1><img src="../proyecto/imagenes/logo.png" alt="logo"></h1>
         <nav>
           <ul>
             <li><a href="../proyecto/index.html">Home</a></li>
@@ -26,33 +26,33 @@
         <input class="input-padron" type="text" id="nombreApellido" required>
 
         <label for="correo">Correo electronio</label>
-        <input class="input-padron" type="email" id="correo" required>
+        <input class="input-padron" type="email" id="correo" placeholder="email@dominio.com" required>
 
         <label for="telefono">Telefono</label>
-        <input class="input-padron" type="tel" id="telefono" required>
+        <input class="input-padron" type="tel" id="telefono" placeholder="(xxx)xxx-xxxx" required>
 
         <label for="mensaje">Mensaje</label>
         <textarea class="input-padron" id="mensaje" cols="70" rows="10" required></textarea>
-        <div>
-          <p>Como le gustaria que lo contactemos?</p>
+        <fieldset>
+          <legend>Como le gustaria que lo contactemos?</legend>
           <label for="radio-email"><input type="radio" name="contacto" id="radio-email" value="Email">Email</label>
           <label for="radio-telefono"><input type="radio" name="contacto" id="radio-telefono" value="Telefono">Telefono</label>
           <label for="radio-whatsapp"><input type="radio" name="contacto" id="radio-whatsapp" value="Whatsapp" checked>Whatsapp</label>
-        </div>
-        <div>
-          <p>En cual orario quiere ser atendido</p>
+        </fieldset>
+        <fieldset>
+          <legend>En cual orario quiere ser atendido</legend>
           <select name="" id="">
             <option value="mañana">Mañana</option>
             <option value="tarde">Tarde</option>
             <option value="noche">Noche</option>
           </select>
-        </div>
+        </fieldset>
         <label class="checkbox"><input type="checkbox" checked> Le gustaria recibir novedades de la barberia Alura?</label>
         <input type="submit" value="Enviar">
       </form>
     </main>
     <footer>
-      <img src="../proyecto/imagenes/logo-blanco.png" alt="">
+      <img src="../proyecto/imagenes/logo-blanco.png" alt="logo">
       <p class="copyright">&copy; Copyright Barbería Alura - 2023</p>
   </footer>
   </body>
