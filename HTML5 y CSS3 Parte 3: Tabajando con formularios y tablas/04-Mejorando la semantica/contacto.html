@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Productos - Barbería Alura</title>
+    <link rel="stylesheet" href="../proyecto/reset.css">
+    <link rel="stylesheet" href="../proyecto/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="caja">
+        <h1><img src="../proyecto/imagenes/logo.png"></h1>
+        <nav>
+          <ul>
+            <li><a href="../proyecto/index.html">Home</a></li>
+            <li><a href="../proyecto/productos.html">Productos</a></li>
+            <li><a href="../proyecto/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <form action="post">
+        <label for="nombreApellido">Nombre y Apellido</label>
+        <input class="input-padron" type="text" id="nombreApellido">
+
+        <label for="correo">Correo electronio</label>
+        <input class="input-padron" type="text" id="correo">
+
+        <label for="telefono">Telefono</label>
+        <input class="input-padron" type="text" id="telefono">
+
+        <label for="mensaje">Mensaje</label>
+        <textarea class="input-padron" id="mensaje" cols="70" rows="10"></textarea>
+        <div>
+          <p>Como le gustaria que lo contactemos?</p>
+          <label for="radio-email"><input type="radio" name="contacto" id="radio-email" value="Email">Email</label>
+          <label for="radio-telefono"><input type="radio" name="contacto" id="radio-telefono" value="Telefono">Telefono</label>
+          <label for="radio-whatsapp"><input type="radio" name="contacto" id="radio-whatsapp" value="Whatsapp">Whatsapp</label>
+        </div>
+        <div>
+          <p>En cual orario quiere ser atendido</p>
+          <select name="" id="">
+            <option value="mañana">Mañana</option>
+            <option value="tarde">Tarde</option>
+            <option value="noche">Noche</option>
+          </select>
+        </div>
+        <label class="checkbox"><input type="checkbox"> Le gustaria recibir novedades de la barberia Alura?</label>
+        <input type="submit" value="Enviar">
+      </form>
+    </main>
+    <footer>
+      <img src="../proyecto/imagenes/logo-blanco.png" alt="">
+      <p class="copyright">&copy; Copyright Barbería Alura - 2023</p>
+  </footer>
+  </body>
