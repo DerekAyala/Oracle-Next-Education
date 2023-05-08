@@ -93,7 +93,7 @@ footer{
 
 main{
   width: 940px;
-  margin: 0 auto;    
+  margin: 0 auto;
 }
 
 form{
@@ -133,4 +133,32 @@ form label, form legend{
 .enviar:hover{
   background-color: darkorange;
   transform: scale(1.2);
+}
+
+/** home **/
+
+.banner{
+  width: 100%;
+}
+
+.titulo-principal{
+  text-align: center;
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+.principal p{
+  margin: 0 0 1em;
+}
+
+.principal strong{
+  font-weight: 700;
+}
+
+.principal em{
+  font-style: italic;
+}
+
+.imagenDiferenciales{
+  width: 60%;
 }
