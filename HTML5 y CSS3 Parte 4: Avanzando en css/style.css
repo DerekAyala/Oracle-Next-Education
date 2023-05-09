@@ -155,6 +155,14 @@ form label, form legend{
   clear: left;
 }
 
+.titulo-principal::first-letter{
+  font-weight: 700;
+}
+
+p::first-line{
+  font-style: italic;
+}
+
 .principal p{
   margin: 0 0 1em;
 }
@@ -201,11 +209,14 @@ form label, form legend{
   width: 40%;
   display: inline-block;
   vertical-align: top;
-  list-style: circle;
 }
 
 .items{
   line-height: 1.5;
+}
+
+.items::before{
+  content: "★ ";
 }
 
 .items:first-child{
