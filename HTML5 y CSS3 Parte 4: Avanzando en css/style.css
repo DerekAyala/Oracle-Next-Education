@@ -175,7 +175,27 @@ form label, form legend{
   text-align: center;
 }
 
-.imagenDiferenciales{
+.contendio-diferenciales{
+  width: 640px;
+  margin: 40px auto;
+}
+
+.lista-diferenciales{
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  list-style: circle;
+}
+
+.items{
+  line-height: 1.5;
+}
+
+.items:first-child{
+  font-weight: 700;
+}
+
+.imagen-diferenciales{
   width: 60%;
 }
 
