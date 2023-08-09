@@ -1,5 +1,6 @@
-package Entidades;
-public class Cuenta {
+package bytebank;
+
+public abstract class Cuenta {
 
     protected double saldo;
     private int agencia = 1;
@@ -7,21 +8,20 @@ public class Cuenta {
     private Cliente titular = new Cliente();
 
     private static int total;
-    
+
     public Cuenta() {
-    	
+
     }
-    
+
     public Cuenta( int agencia, int numero) {
         this.agencia = agencia;
         this.numero = numero;
         System.out.println("Estoy creando una cuenta " + this.numero);
+
         Cuenta.total ++;
     }
-    
-    public void deposita(double valor) {
-        this.saldo = this.saldo + valor;
-    };
+
+    public abstract void deposita(double valor);
 
     public boolean saca(double valor) {
         if(this.saldo >= valor) {
