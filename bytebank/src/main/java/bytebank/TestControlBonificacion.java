@@ -3,7 +3,7 @@ package bytebank;
 public class TestControlBonificacion {
 
 	public static void main(String[] args) {
-		Funcionario diego = new Contador();
+		Funcionario diego = new Funcionario();
 		diego.setSalario(2000);
 		
 		Gerente jimena = new Gerente();

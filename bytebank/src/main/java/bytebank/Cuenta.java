@@ -1,6 +1,6 @@
 package bytebank;
 
-public abstract class Cuenta {
+public class Cuenta {
 
     protected double saldo;
     private int agencia = 1;
@@ -8,11 +8,11 @@ public abstract class Cuenta {
     private Cliente titular = new Cliente();
 
     private static int total;
-
+    
     public Cuenta() {
-
+    	
     }
-
+    
     public Cuenta( int agencia, int numero) {
         this.agencia = agencia;
         this.numero = numero;
@@ -20,8 +20,10 @@ public abstract class Cuenta {
 
         Cuenta.total ++;
     }
-
-    public abstract void deposita(double valor);
+    
+    public void deposita(double valor) {
+        this.saldo = this.saldo + valor;
+    };
 
     public boolean saca(double valor) {
         if(this.saldo >= valor) {
